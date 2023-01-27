@@ -1,0 +1,10 @@
+@import url(./testhead.css);
+p {
+  color: white;
+  background-color: red;
+}
+
+h3 {
+  background-color: aliceblue;
+  color: aquamarine;
+}

@@ -1,0 +1,9 @@
+@import url(./heading-style.css);
+p {
+  color: aqua;
+  background-color: black;
+}
+span {
+  color: yellow;
+  background-color: blue;
+}
