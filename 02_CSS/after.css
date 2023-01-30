@@ -1,0 +1,7 @@
+.box::before {
+  content: "HOT!! ";
+  color: red;
+}
+.box::after {
+  content: " 뒤에다가 삽입";
+}
