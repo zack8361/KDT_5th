@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      span {
+      .parent {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        overflow: auto;
+      }
+      .child {
+        width: 400px;
+        height: 100px;
         background-color: blueviolet;
-        display: inline-block;
       }
     </style>
   </head>
   <body>
-    <span>세로 상쇄 테스트</span>
-    <br />
-    <span>세로 상쇄 테스트</span>
+    <div class="parent">
+      <div class="child">child</div>
+    </div>
   </body>
 </html>
