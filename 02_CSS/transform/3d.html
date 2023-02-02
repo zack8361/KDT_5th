@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate</title>
+    <!--x축과 y축으로 이동시키기 -->
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+      }
+      .parent {
+        width: 200px;
+        position: relative;
+        background-color: gray;
+        perspective: 100px;
+      }
+      .child {
+        position: absolute;
+        background-color: dodgerblue;
+
+        /* 각도 변경 skew("기울어진 각도"deg) */
+      }
+      .child:hover {
+        transition: 2s;
+        cursor: pointer;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
