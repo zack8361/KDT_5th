@@ -143,6 +143,9 @@ body {
   background-image: url("./image/hero32.png");
 }
 img {
-  height: 300px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 300px;
   justify-content: center;
 }
