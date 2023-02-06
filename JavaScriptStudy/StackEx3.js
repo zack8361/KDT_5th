@@ -9,4 +9,4 @@ function go() {
 }
 go();
 
-//setTimeout -> I/O 작업
+//setTimeout -> I/O 작업   
