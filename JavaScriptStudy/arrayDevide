@@ -1,0 +1,16 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+const array = ["node.js", {}, 10, true];
+const [node, obj, age, bool] = array;
+
+console.log(node);
+console.log(obj);
+console.log(age);
+console.log(bool);
