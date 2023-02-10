@@ -24,23 +24,34 @@
 //   }
 // }
 
-//3번째 실습
-let sum = 0;
-for (let i = 0; i <= 100; i++) {
-  if (i % 2 == 0 || i % 5 == 0) {
-    sum += i;
-  }
-}
-console.log(sum);
+// //3번째 실습
+// let sum = 0;
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 2 == 0 || i % 5 == 0) {
+//     sum += i;
+//   }
+// }
+// console.log(sum);
 
-//4번째 실습
-let i = 1;
-while (i < 10) {
-  let j = 1;
-  console.log(`------${i} 단-------`);
-  while (j < 10) {
-    console.log(`${i} * ${j} = ${i * j}`);
-    j++;
+// //4번째 실습
+// let i = 1;
+// while (i < 10) {
+//   let j = 1;
+//   console.log(`------${i} 단-------`);
+//   while (j < 10) {
+//     console.log(`${i} * ${j} = ${i * j}`);
+//     j++;
+//   }
+//   i++;
+// }
+
+//5번째 실습
+let sum2 = 0;
+
+for (let i = 1; i <= 1000; i++) {
+  if (i % 2 == 1) {
+    continue;
   }
-  i++;
+  sum2 += i;
 }
+console.log(sum2);
