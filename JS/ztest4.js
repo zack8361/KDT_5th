@@ -77,5 +77,4 @@ const pororo = {
   showHeight,
 };
 pororo.showHeight();
-
 pororo.name("이찬호");
