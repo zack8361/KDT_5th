@@ -17,17 +17,15 @@
 // }
 
 //3번째 실습
+const kdtCurriculum = ["HTML", "CSS", "JS", "BACKEND", "REACT"];
+const result1 = kdtCurriculum[0].split("").reverse().join("");
+const result2 = kdtCurriculum[kdtCurriculum.length - 1]
+  .split("")
+  .reverse()
+  .join("");
 
-// const kdtCurriculum = ["HTML", "CSS", "JS", "BACKEND", "REACT"];
-
-// const result1 = kdtCurriculum[0].split("").reverse().join("");
-// const result2 = kdtCurriculum[kdtCurriculum.length - 1]
-//   .split("")
-//   .reverse()
-//   .join("");
-
-// console.log(result1);
-// console.log(result2);
+console.log(result1);
+console.log(result2);
 
 // //4번째 실습
 // const pororo = {
@@ -65,16 +63,16 @@
 // superman.fly("ㅇ.ㅇ");
 // superman.cute("ㅇ.ㅇ");
 
-const showHeight = () => {
-  console.log(` hello ${this.height}`);
-};
+// const showHeight = () => {
+//   console.log(` hello ${this.height}`);
+// };
 
-const pororo = {
-  height: 180,
-  name(message) {
-    console.log(`뽀로로의 이름은 : ${message}`);
-  },
-  showHeight,
-};
-pororo.showHeight();
-pororo.name("이찬호");
+// const pororo = {
+//   height: 180,
+//   name(message) {
+//     console.log(`뽀로로의 이름은 : ${message}`);
+//   },
+//   showHeight,
+// };
+// pororo.showHeight();
+// pororo.name("이찬호");

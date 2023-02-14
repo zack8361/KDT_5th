@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <input type="text" />
+
+    <script>
+      let select1 = document.querySelector(".box1");
+      let select2 = document.querySelector(".box2");
+      let select3 = document.querySelector("input");
+
+      select1.innerHTML = "<a href='https://www.naver.com'>네이버로 이동</a>";
+      select2.setAttribute("style", "background-color:orange");
+      select2.innerText = "박스 내용 및 스타일 변경";
+      select3.setAttribute("placeholder", "아이디를 입력하세요");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1,
+      .box2 {
+        cursor: pointer;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .skyblue {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1" onclick="test();">box1</div>
+    <div class="box2">box2</div>
+  </body>
+  <script>
+    let boxE1 = document.querySelector(".box1");
+    function test() {
+      if (boxE1.classList.contains("orange")) {
+        boxE1.classList.remove("orange");
+        boxE1.classList.add("skyblue");
+      } else {
+        boxE1.classList.remove("skyblue");
+        boxE1.classList.add("orange");
+      }
+    }
+
+    let boxE2 = document.querySelector(".box2");
+    boxE2.addEventListener("click", function () {
+      if (boxE2.classList.contains("orange")) {
+        boxE2.classList.remove("orange");
+        boxE2.classList.add("skyblue");
+      } else {
+        boxE2.classList.remove("skyblue");
+        boxE2.classList.add("orange");
+      }
+    });
+  </script>
+</html>
