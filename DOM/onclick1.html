@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .red {
+      background-color: rgb(245, 116, 116);
+    }
+    .orange {
+      background-color: rgb(232, 182, 91);
+    }
+    .yellow {
+      background-color: rgb(235, 235, 167);
+    }
+    .green {
+      background-color: rgb(20, 178, 20);
+    }
+    .blue {
+      background-color: rgb(42, 42, 200);
+    }
+    .darkblue {
+      background-color: rgb(14, 14, 78);
+    }
+    .blueviolet {
+      background-color: rgb(151, 113, 186);
+    }
+  </style>
   <body>
-    <button class="btn-1">버튼</button>
+    <button class="btn-1" onclick="test()">버튼</button>
     <div class="box">1</div>
     <div class="box">2</div>
     <div class="box">3</div>
@@ -17,6 +40,7 @@
     <div class="box">7</div>
     <script>
       let boxDiv = document.querySelectorAll(".box");
+      for (let i = 0; i < boxDiv.length; i++) {}
     </script>
   </body>
 </html>
