@@ -1,24 +1,26 @@
+//calendar = 각자 날짜
+//date = 날짜 박히는 input
+//contents = 내용
+
 const calendar = document.querySelector("table");
 const date = document.querySelector("#date");
-const select = document.querySelector("#content");
+const contents = document.querySelector("#content");
 
-let targetEl;
-
-// 클릭 된 요소를 저장하기 위한 전역 변수 let targetEl;
+let bridge;
 calendar.addEventListener("click", function (e) {
   if (e.target.tagName === "P") {
-    console.log(e.target);
-
-    targetEl = e.target;
-    date.value = "2023년 2월 " + targetEl.innerText + "일";
+    bridge = e.target;
+    date.value = "2023년 2월 " + bridge.innerText + "일";
   } else if (e.target.tagName === "DIV") {
+    console.log(e.target);
     e.target.remove();
   }
 });
-
 function writeSchedule() {
   const div = document.createElement("div");
-  div.innerHTML = select.value;
-  targetEl.parentNode.append(div);
-  select.value = "";
+  div.innerText = contents.value;
+  bridge.parentNode.append(div);
+  contents.value = "";
 }
+
+let targetEl;
