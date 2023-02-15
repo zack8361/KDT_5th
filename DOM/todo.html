@@ -36,11 +36,13 @@
       function test() {
         if (inputTask.value === "") {
           inputTask.setAttribute("placeholder", "내용을 입력해라");
+          alert("내용을 입력해");
         } else {
           //textContent
           const li = document.createElement("li");
           li.innerText = inputTask.value;
           todoList.appendChild(li);
+          inputTask.value = "";
 
           //checkBox
           const checkBox = document.createElement("input");
@@ -61,12 +63,9 @@
             }
           });
 
-          btn.addEventListener("click", function () {
-            if (checkBox.checked === true) {
-              li.remove();
-            } else {
-              alert("체크박스 선택하세요");
-            }
+          btn.addEventListener("click", function (e) {
+            console.log(e.target);
+            e.target.parentNode.remove();
           });
         }
       }
