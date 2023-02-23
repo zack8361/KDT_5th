@@ -14,6 +14,7 @@ a {
 
 body {
   background-color: #eee;
+  text-decoration: none;
 }
 
 .wrap {
@@ -71,4 +72,4 @@ body {
   text-align: center;
   font: 16px/30px "arial";
   margin-top: 20px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
